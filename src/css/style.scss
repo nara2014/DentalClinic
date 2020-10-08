@@ -1,0 +1,61 @@
+// 変数
+$MAX_WIDTH: 920px;
+$FONT: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4',Osaka,'ＭＳ Ｐゴシック',sans-serif;
+
+// @mixin 関数
+@mixin debug($color) {
+    // border: solid 1px $color;
+    // margin: 2px;
+    // padding: 2px;
+}
+
+.wrapper {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  max-width: $MAX_WIDTH;
+  margin: auto auto;
+  // padding: 50px;
+}
+
+.top-nav {
+  // border-radius: 1%;
+  ul {
+    @include debug(red);
+    list-style-type: none; /* リストの点を消す */
+    padding: 0; /* 左にできる隙間を消す */
+    display: flex;
+    flex-direction: row;
+    // background-color: antiquewhite;
+    li {
+      @include debug(blue);
+      background-image: linear-gradient(rgb(255, 217, 94) 0%,rgb(212, 173, 0) 100%);
+      width: calc( #{$MAX_WIDTH} / 5);
+      border-right: solid 1px (rgb(194, 158, 0));
+      border-left: solid 1px (rgb(255, 248, 184));
+      &:first-child {
+        border-radius: 5px 0px 0px 5px;
+      }
+      &:last-child {
+        border-radius: 0px 5px 5px 0px;
+      }
+      a {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        font-family: $FONT;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 2px #c6ae6c;
+      }
+      .jpn {
+        font-size: 0.9em;
+        margin: 17px 0px 0px 0px;
+      }
+      .eng {
+        font-size: 0.6em;
+        margin: 0px 0px 18px 0px;
+      }
+    }
+  }
+}
+
