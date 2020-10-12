@@ -2,7 +2,8 @@
 $MAX_WIDTH: 920px;
 $FONT: Verdana, Arial, Helvetica, "meirio", "メイリオ", "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka,
   "ＭＳ Ｐゴシック", sans-serif;
-$GRADATION_COLOR: linear-gradient(rgb(255, 217, 94) 0%, orange 100%); 
+$FONT_COLOR: #555555;
+$GRADATION_COLOR: linear-gradient(rgb(255, 217, 94) 0%, orange 100%);
 
 // @mixin 関数
 @mixin debug($color) {
@@ -16,12 +17,12 @@ h2 {
   margin: auto;
   background-image: $GRADATION_COLOR;
   color: white;
-  font-size: 1.0em;
+  font-size: 1em;
 }
 h3 {
   margin: auto;
-  color: gray;
-  font-size: 1.0em;
+  color: $FONT_COLOR;
+  font-size: 1em;
 }
 
 a {
@@ -41,12 +42,13 @@ ul {
 body {
   margin: 0px;
   border-top: solid 8px #ffbb00;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 .wrapper {
   max-width: $MAX_WIDTH;
   margin: auto auto;
   padding: 2px 0px 0px 0px;
+  font-family: $FONT;
 }
 
 .top {
@@ -58,7 +60,7 @@ body {
     padding-top: 20px;
   }
   .titleInfo {
-    color: gray;
+    color: $FONT_COLOR;
     .text {
       font-size: 0.5em;
     }
@@ -148,7 +150,7 @@ body {
           border-bottom: solid 1px orange;
           padding: 10px 0px 9px 20px;
           a {
-            color: gray;
+            color: $FONT_COLOR;
           }
         }
       }
@@ -167,11 +169,11 @@ body {
         padding-bottom: 10px;
       }
       .listInfo {
-        color: gray;
+        color: $FONT_COLOR;
         .wrapDtd {
           display: flex;
           margin: 10px;
-          border-bottom: dotted 1px gray;
+          border-bottom: dotted 1px #AAAAAA;
           padding-bottom: 10px;
           dt {
             font-size: 13px;
@@ -187,5 +189,55 @@ body {
       }
     }
   }
+}
 
+
+footer {
+  .wrapList {
+    padding-top: 20px;
+    ul {
+      display: flex;
+      margin: 0 auto;
+      font-size: 0.82em;
+      background-color: orange;
+      border-radius: 6px;
+      li {
+        background: url(../images/bgFooterIcon.png) left center no-repeat;
+        margin: 0;
+        padding: 6px 5px 6px 0px;
+        i {
+          color: white;
+          font-size: 0.9em;
+          padding: 0px 10px 0px 15px;
+        }
+        a {
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .wrapInfo {
+      display: flex;
+      justify-content: flex-end;
+      color: $FONT_COLOR;
+      p {
+        font-size: 0.8em;
+        margin: 0;
+        padding: 15px 0px 15px 8px;
+      }
+      .name {
+        font-weight: bold;
+      }
+    }
+  }
+  .copy {
+    font-size: 0.78em;
+    color: $FONT_COLOR;
+    text-align: center;
+    margin: 0;
+    border-top: solid 2px orange;
+    padding: 10px 0px 20px 0px;
+  }
 }
