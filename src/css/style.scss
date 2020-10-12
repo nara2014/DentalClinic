@@ -125,11 +125,12 @@ body {
 .center {
   display: flex;
   justify-content: space-between;
-  // 真ん中左のメニュー
+  // 中央左のメニュー
   .wrapSide {
     width: 260px;
     min-width: 180px;
     .side {
+      background-color: white;
       border: solid 1px orange;
       border-radius: 5px 5px 0px 0px;
       margin: 0px 0px 20px 0px;
@@ -148,13 +149,12 @@ body {
           padding: 10px 0px 9px 20px;
           a {
             color: gray;
-
           }
         }
       }
     }
   }
-  // 中央左のメイン
+  // 中央右のメイン
   .main {
     width: 640px;
     min-width: 640px;
