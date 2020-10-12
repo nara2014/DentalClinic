@@ -1,36 +1,99 @@
 // 変数
 $MAX_WIDTH: 920px;
-$FONT: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4',Osaka,'ＭＳ Ｐゴシック',sans-serif;
+$FONT: Verdana, Arial, Helvetica, "meirio", "メイリオ", "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka,
+  "ＭＳ Ｐゴシック", sans-serif;
+$GRADATION_COLOR: linear-gradient(rgb(255, 217, 94) 0%, orange 100%); 
 
 // @mixin 関数
 @mixin debug($color) {
-    // border: solid 1px $color;
-    // margin: 2px;
-    // padding: 2px;
+  // border: solid 1px $color;
+  // margin: 2px;
+  // padding: 2px;
 }
 
+// タグ名 指定
+h2 {
+  margin: auto;
+  background-image: $GRADATION_COLOR;
+  color: white;
+  font-size: 1.0em;
+}
+h3 {
+  margin: auto;
+  color: gray;
+  font-size: 1.0em;
+}
+
+a {
+  text-decoration: none; /* リンクの下線を消す */
+}
+ul {
+  list-style-type: none; /* リストの点を消す */
+  padding: 0; /* 左にできる隙間を消す */
+  background-color: white;
+}
+
+// クラス指定
+.colRed {
+  color: rgb(255, 20, 20);
+}
+
+body {
+  margin: 0px;
+  border-top: solid 8px #ffbb00;
+  background-color: #F6F6F6;
+}
 .wrapper {
-  font-family: "M PLUS Rounded 1c", sans-serif;
   max-width: $MAX_WIDTH;
   margin: auto auto;
-  // padding: 50px;
+  padding: 2px 0px 0px 0px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  .titleLogo {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .titleInfo {
+    color: gray;
+    .text {
+      font-size: 0.5em;
+    }
+    .wrapPhone {
+      display: flex;
+      font-size: 1.62em;
+      i {
+        margin: auto;
+        padding-right: 10px;
+      }
+      .phone {
+        margin: auto;
+      }
+    }
+    .openTime {
+      font-size: 0.5em;
+      border: solid 1px rgb(220, 220, 220);
+      padding: 10px 20px 10px 20px;
+      margin: auto;
+    }
+  }
 }
 
 .top-nav {
   // border-radius: 1%;
   ul {
-    @include debug(red);
-    list-style-type: none; /* リストの点を消す */
-    padding: 0; /* 左にできる隙間を消す */
+    border: solid 1px #f0ca61;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
-    // background-color: antiquewhite;
     li {
-      @include debug(blue);
-      background-image: linear-gradient(rgb(255, 217, 94) 0%,rgb(212, 173, 0) 100%);
-      width: calc( #{$MAX_WIDTH} / 5);
-      border-right: solid 1px (rgb(194, 158, 0));
-      border-left: solid 1px (rgb(255, 248, 184));
+      background-image: $GRADATION_COLOR;
+      width: calc(#{$MAX_WIDTH} / 5);
+      border-right: solid 1px (orange);
+      border-left: solid 1px (rgb(255, 209, 124));
       &:first-child {
         border-radius: 5px 0px 0px 5px;
       }
@@ -41,21 +104,88 @@ $FONT: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro
         display: inline-block;
         text-align: center;
         width: 100%;
-        text-decoration: none;
-        font-family: $FONT;
+        height: 70px;
         font-weight: bold;
         color: white;
         text-shadow: 1px 1px 2px #c6ae6c;
       }
       .jpn {
         font-size: 0.9em;
-        margin: 17px 0px 0px 0px;
+        margin: auto;
+        padding: 17px 0px 0px 0px;
       }
       .eng {
         font-size: 0.6em;
-        margin: 0px 0px 18px 0px;
+        margin: auto;
       }
     }
   }
 }
 
+.center {
+  display: flex;
+  justify-content: space-between;
+  .wrapSide {
+    width: 260px;
+    min-width: 180px;
+    .side {
+      border: solid 1px orange;
+      border-radius: 5px 5px 0px 0px;
+      margin: 0px 0px 20px 0px;
+      list-style-type: disc;
+      .titleSide {
+        padding: 10px 15px;
+      }
+      .listSide {
+        font-size: 0.9em;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+        li {
+          background: url(../img/bgListIcon01.png) no-repeat 5px center;
+          margin: 0px 10px;
+          border-bottom: solid 1px orange;
+          padding: 10px 0px 9px 20px;
+          a {
+            color: gray;
+
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    width: 640px;
+    height: 280px;
+    min-width: 640px;
+    .infoMain {
+      background-color: white;
+      padding: 35px 20px;
+      border-radius: 0 0 5px 5px;
+      .titleInfo {                
+        border-bottom: solid orange;
+        padding-bottom: 10px;
+      }
+      .listInfo {
+        color: gray;
+        .wrapDtd {
+          display: flex;
+          margin: 10px;
+          border-bottom: dotted 1px gray;
+          padding-bottom: 10px;
+          dt {
+            font-size: 13px;
+            font-weight: bold;
+            width: 25%;
+          }
+          dd {
+            font-size: 13px;
+            margin: 0px;
+            width: 75%;
+          }
+        }
+      }
+      
+    }
+  }
+}
