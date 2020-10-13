@@ -75,6 +75,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.62em;
+  padding: 8px 0px;
 }
 
 .top .titleInfo .wrapPhone i {
@@ -93,8 +94,11 @@ body {
   margin: auto;
 }
 
+.top-nav {
+  padding-bottom: 5px;
+}
+
 .top-nav ul {
-  border: solid 1px #f0ca61;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,6 +170,7 @@ body {
 
 .center .wrapSide .side .titleSide {
   padding: 10px 15px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .center .wrapSide .side .listSide {
@@ -188,6 +193,10 @@ body {
 .center .main {
   width: 640px;
   min-width: 640px;
+}
+
+.center .main .picMain {
+  padding-bottom: 5px;
 }
 
 .center .main .infoMain {

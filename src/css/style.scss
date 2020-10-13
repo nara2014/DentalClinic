@@ -67,6 +67,7 @@ body {
     .wrapPhone {
       display: flex;
       font-size: 1.62em;
+      padding: 8px 0px;
       i {
         margin: auto;
         padding-right: 10px;
@@ -85,9 +86,8 @@ body {
 }
 
 .top-nav {
-  // border-radius: 1%;
+  padding-bottom: 5px;
   ul {
-    border: solid 1px #f0ca61;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -139,6 +139,7 @@ body {
       list-style-type: disc;
       .titleSide {
         padding: 10px 15px;
+        border-radius: 5px 5px 0px 0px;
       }
       .listSide {
         font-size: 0.9em;
@@ -160,6 +161,9 @@ body {
   .main {
     width: 640px;
     min-width: 640px;
+    .picMain {
+      padding-bottom: 5px;
+    }
     .infoMain {
       background-color: white;
       padding: 35px 20px;
