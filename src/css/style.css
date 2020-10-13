@@ -219,7 +219,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 10px;
-  border-bottom: dotted 1px #AAAAAA;
+  border-bottom: dotted 1px #aaaaaa;
   padding-bottom: 10px;
 }
 
@@ -318,7 +318,7 @@ footer .copy {
 }
 
 .breadcrumbs ol li:after {
-  content: '>';
+  content: ">";
   padding: 0 3px;
   /*左右に余白*/
 }
@@ -384,7 +384,7 @@ footer .copy {
 .main .wrapOpen table tr th {
   margin: 0;
   padding: 10px;
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   border: solid 1px gray;
 }
 
@@ -438,5 +438,89 @@ footer .copy {
 
 .main .wrapMedical .blank {
   height: 20px;
+}
+
+.main {
+  background-color: white;
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
+
+.main .wrapMember h2 {
+  font-size: 1.25em;
+  border: solid 1px orage;
+  border-radius: 6px 6px 0px 0px;
+  padding: 40px 0px 30px 20px;
+}
+
+.main .wrapMember .wrapDirector {
+  padding: 20px;
+}
+
+.main .wrapMember .wrapDirector h3 {
+  border-bottom: solid 3px orange;
+}
+
+.main .wrapMember .wrapDirector .director {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0px;
+}
+
+.main .wrapMember .wrapDirector .director .wrapPic p {
+  font-size: 0.82em;
+  color: white;
+  background-color: orange;
+  text-align: center;
+  padding: 1px;
+}
+
+.main .wrapMember .wrapDirector .director .wrapCarrier h4 {
+  color: orange;
+  font-size: 0.96em;
+  margin: 0;
+  padding: 17px 0px 17px 20px;
+}
+
+.main .wrapMember .wrapDirector .director .wrapCarrier p {
+  color: #555555;
+  font-size: 0.82em;
+  margin: 0;
+  padding: 0px 0px 3px 20px;
+}
+
+.main .wrapMember .wrapDirector .greeting h4 {
+  color: orange;
+  font-size: 0.96em;
+  margin: 0;
+  padding: 17px 0px 7px 0px;
+}
+
+.main .wrapMember .wrapDirector .greeting p {
+  color: #555555;
+  font-size: 0.82em;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  line-height: 1.7em;
+}
+
+.main .wrapMember .wrapStaff {
+  padding: 10px 20px;
+}
+
+.main .wrapMember .wrapStaff h3 {
+  border-bottom: solid 3px orange;
+}
+
+.main .wrapMember .wrapStaff .wrapPic {
+  padding: 20px 0px;
+}
+
+.main .wrapMember .wrapStaff .nameStaff p {
+  color: #555555;
+  font-size: 0.82em;
+  margin: 0;
+  padding: 0.1em 0;
 }
 /*# sourceMappingURL=style.css.map */

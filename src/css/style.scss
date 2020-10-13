@@ -177,7 +177,7 @@ body {
         .wrapDtd {
           display: flex;
           margin: 10px;
-          border-bottom: dotted 1px #AAAAAA;
+          border-bottom: dotted 1px #aaaaaa;
           padding-bottom: 10px;
           dt {
             font-size: 13px;
@@ -194,7 +194,6 @@ body {
     }
   }
 }
-
 
 footer {
   .wrapList {
@@ -261,7 +260,7 @@ footer {
         }
       }
       &:after {
-        content: '>';
+        content: ">";
         padding: 0 3px; /*左右に余白*/
       }
       &:last-child::after {
@@ -287,7 +286,6 @@ footer {
       margin: 0px 20px;
       border-bottom: solid 3px orange;
       padding: 35px 0px 10px 0px;
-
     }
     h4 {
       color: orange;
@@ -308,7 +306,6 @@ footer {
       margin: 0px 0px 17px 0px;
       border-bottom: solid 3px orange;
       padding: 35px 0px 10px 0px;
-
     }
     table {
       width: 100%;
@@ -322,7 +319,7 @@ footer {
         th {
           margin: 0;
           padding: 10px;
-          background-color: #CCCCCC;
+          background-color: #cccccc;
           border: solid 1px gray;
         }
         td {
@@ -358,7 +355,6 @@ footer {
       margin: 0px 20px;
       border-bottom: solid 3px orange;
       padding: 35px 0px 10px 0px;
-
     }
     h4 {
       color: orange;
@@ -373,7 +369,88 @@ footer {
       padding: 0px 0px 3px 20px;
     }
     .blank {
-      height: 20px;;
+      height: 20px;
+    }
+  }
+}
+
+// スタッフ紹介ページ専用
+.main {
+  background-color: white;
+  border-radius: 6px;
+  padding-bottom: 20px;
+  .wrapMember {
+    h2 {
+      font-size: 1.25em;
+      border: solid 1px orage;
+      border-radius: 6px 6px 0px 0px;
+      padding: 40px 0px 30px 20px;
+    }
+    .wrapDirector {
+      padding: 20px;
+      h3 {
+        border-bottom: solid 3px orange;
+      }
+      .director {
+        display: flex;
+        padding: 15px 0px ;
+        .wrapPic {
+          p {
+            font-size: 0.82em;
+            color: white;
+            background-color: orange;
+            text-align: center;
+            padding: 1px;
+          }
+        }
+        .wrapCarrier {
+          h4 {
+            color: orange;
+            font-size: 0.96em;
+            margin: 0;
+            padding: 17px 0px 17px 20px;
+          }
+          p {
+            color: $FONT_COLOR;
+            font-size: 0.82em;
+            margin: 0;
+            padding: 0px 0px 3px 20px;
+          }
+        }
+      }
+      .greeting {
+        h4 {
+          color: orange;
+          font-size: 0.96em;
+          margin: 0;
+          padding: 17px 0px 7px 0px;
+        }
+        p {
+          color: $FONT_COLOR;
+          font-size: 0.82em;
+          margin: 0;
+          padding: 10px 0px 10px 0px;
+          line-height: 1.7em;
+        }
+      }
+    }
+    .wrapStaff {
+      padding: 10px 20px;
+      h3 {
+        border-bottom: solid 3px orange;
+      }
+      .wrapPic {
+        padding: 20px 0px;
+      }
+      .nameStaff {
+        p {
+          color: $FONT_COLOR;
+          font-size: 0.82em;
+          margin: 0;
+          padding: 0.1em 0;
+        }
+      }
+
     }
   }
 }
