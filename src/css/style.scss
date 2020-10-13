@@ -393,7 +393,7 @@ footer {
       }
       .director {
         display: flex;
-        padding: 15px 0px ;
+        padding: 15px 0px;
         .wrapPic {
           p {
             font-size: 0.82em;
@@ -450,7 +450,63 @@ footer {
           padding: 0.1em 0;
         }
       }
+    }
+  }
+}
 
+// アクセスページ専用
+.main {
+  background-color: white;
+  border-radius: 6px;
+  padding-bottom: 20px;
+  .wrapAccess {
+    h2 {
+      font-size: 1.25em;
+      border: solid 1px orage;
+      border-radius: 6px 6px 0px 0px;
+      padding: 40px 0px 30px 20px;
+    }
+    .wrapMap {
+      padding: 20px;
+      h3 {
+        padding: 15px 0px;
+        border-bottom: solid 3px orange;
+      }
+      .map {
+        padding: 15px 0px 0px 0px;
+      }
+      .link {
+        a {
+          color: blue;
+          font-size: 0.7em;
+          text-decoration: underline;
+        }
+      }
+      .line {
+        margin: 10px 0px;
+        border-bottom: solid 4px orange;
+      }
+      .wrapUnder {
+        display: flex;
+        .wrapPic {
+        }
+        .wrapInfo {
+          padding-left: 20px;
+          h4 {
+            color: orange;
+            font-size: 0.96em;
+            margin: 0;
+            padding: 17px 0px 7px 0px;
+          }
+          p {
+            color: $FONT_COLOR;
+            font-size: 0.82em;
+            margin: 0;
+            padding: 10px 0px 10px 0px;
+            line-height: 1.7em;
+          }
+        }
+      }
     }
   }
 }

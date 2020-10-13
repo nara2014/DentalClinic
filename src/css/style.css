@@ -523,4 +523,66 @@ footer .copy {
   margin: 0;
   padding: 0.1em 0;
 }
+
+.main {
+  background-color: white;
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
+
+.main .wrapAccess h2 {
+  font-size: 1.25em;
+  border: solid 1px orage;
+  border-radius: 6px 6px 0px 0px;
+  padding: 40px 0px 30px 20px;
+}
+
+.main .wrapAccess .wrapMap {
+  padding: 20px;
+}
+
+.main .wrapAccess .wrapMap h3 {
+  padding: 15px 0px;
+  border-bottom: solid 3px orange;
+}
+
+.main .wrapAccess .wrapMap .map {
+  padding: 15px 0px 0px 0px;
+}
+
+.main .wrapAccess .wrapMap .link a {
+  color: blue;
+  font-size: 0.7em;
+  text-decoration: underline;
+}
+
+.main .wrapAccess .wrapMap .line {
+  margin: 10px 0px;
+  border-bottom: solid 4px orange;
+}
+
+.main .wrapAccess .wrapMap .wrapUnder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .wrapAccess .wrapMap .wrapUnder .wrapInfo {
+  padding-left: 20px;
+}
+
+.main .wrapAccess .wrapMap .wrapUnder .wrapInfo h4 {
+  color: orange;
+  font-size: 0.96em;
+  margin: 0;
+  padding: 17px 0px 7px 0px;
+}
+
+.main .wrapAccess .wrapMap .wrapUnder .wrapInfo p {
+  color: #555555;
+  font-size: 0.82em;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  line-height: 1.7em;
+}
 /*# sourceMappingURL=style.css.map */
