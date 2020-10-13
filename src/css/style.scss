@@ -206,7 +206,6 @@ footer {
       background-color: orange;
       border-radius: 6px;
       li {
-        background: url(../images/bgFooterIcon.png) left center no-repeat;
         margin: 0;
         padding: 6px 5px 6px 0px;
         i {
@@ -243,5 +242,101 @@ footer {
     margin: 0;
     border-top: solid 2px orange;
     padding: 10px 0px 20px 0px;
+  }
+}
+
+// クリニックページ
+.breadcrumbs {
+  ol {
+    display: flex;
+    list-style-type: none; /* リストの点を消す */
+    margin: 0;
+    padding: 0 0 12px 0; /* 左にできる隙間を消す */
+    font-size: 0.6em;
+    li {
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: red;
+        }
+      }
+      &:after {
+        content: '>';
+        padding: 0 3px; /*左右に余白*/
+      }
+      &:last-child::after {
+        display: none; /*最後の>を消す*/
+      }
+    }
+  }
+}
+
+.main {
+  background-color: white;
+  border-radius: 6px;
+  padding-bottom: 20px;
+  .wrapConcept {
+    h2 {
+      font-size: 1.25em;
+      border: solid 1px orage;
+      border-radius: 6px 6px 0px 0px;
+      padding: 40px 0px 30px 20px;
+    }
+    h3 {
+      margin: 0px 20px;
+      border-bottom: solid 3px orange;
+      padding: 35px 0px 10px 0px;
+
+    }
+    h4 {
+      color: orange;
+      font-size: 0.96em;
+      margin: 0;
+      padding: 40px 0px 10px 30px;
+    }
+    p {
+      color: $FONT_COLOR;
+      font-size: 0.82em;
+      padding: 0px 30px 0px 30px;
+    }
+  }
+  .wrapOpen {
+    color: $FONT_COLOR;
+    margin: 0px 20px;
+    h3 {
+      margin: 0px 0px 17px 0px;
+      border-bottom: solid 3px orange;
+      padding: 35px 0px 10px 0px;
+
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-color: grey;
+      font-size: 0.8em;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      text-align: center;
+      tr {
+        th {
+          margin: 0;
+          padding: 10px;
+          background-color: #CCCCCC;
+          border: solid 1px gray;
+        }
+        td {
+          margin: 0;
+          padding: 10px;
+          border: solid 1px gray;
+        }
+      }
+    }
+    p {
+      font-size: 0.82em;
+      padding: 0px 30px 0px 0px;
+      span {
+        font-weight: bold;
+      }
+    }
   }
 }

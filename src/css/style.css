@@ -250,7 +250,6 @@ footer .wrapList ul {
 }
 
 footer .wrapList ul li {
-  background: url(../images/bgFooterIcon.png) left center no-repeat;
   margin: 0;
   padding: 6px 5px 6px 0px;
 }
@@ -296,5 +295,111 @@ footer .copy {
   margin: 0;
   border-top: solid 2px orange;
   padding: 10px 0px 20px 0px;
+}
+
+.breadcrumbs ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  /* リストの点を消す */
+  margin: 0;
+  padding: 0 0 12px 0;
+  /* 左にできる隙間を消す */
+  font-size: 0.6em;
+}
+
+.breadcrumbs ol li a {
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li a:hover {
+  color: red;
+}
+
+.breadcrumbs ol li:after {
+  content: '>';
+  padding: 0 3px;
+  /*左右に余白*/
+}
+
+.breadcrumbs ol li:last-child::after {
+  display: none;
+  /*最後の>を消す*/
+}
+
+.main {
+  background-color: white;
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
+
+.main .wrapConcept h2 {
+  font-size: 1.25em;
+  border: solid 1px orage;
+  border-radius: 6px 6px 0px 0px;
+  padding: 40px 0px 30px 20px;
+}
+
+.main .wrapConcept h3 {
+  margin: 0px 20px;
+  border-bottom: solid 3px orange;
+  padding: 35px 0px 10px 0px;
+}
+
+.main .wrapConcept h4 {
+  color: orange;
+  font-size: 0.96em;
+  margin: 0;
+  padding: 40px 0px 10px 30px;
+}
+
+.main .wrapConcept p {
+  color: #555555;
+  font-size: 0.82em;
+  padding: 0px 30px 0px 30px;
+}
+
+.main .wrapOpen {
+  color: #555555;
+  margin: 0px 20px;
+}
+
+.main .wrapOpen h3 {
+  margin: 0px 0px 17px 0px;
+  border-bottom: solid 3px orange;
+  padding: 35px 0px 10px 0px;
+}
+
+.main .wrapOpen table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: grey;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.main .wrapOpen table tr th {
+  margin: 0;
+  padding: 10px;
+  background-color: #CCCCCC;
+  border: solid 1px gray;
+}
+
+.main .wrapOpen table tr td {
+  margin: 0;
+  padding: 10px;
+  border: solid 1px gray;
+}
+
+.main .wrapOpen p {
+  font-size: 0.82em;
+  padding: 0px 30px 0px 0px;
+}
+
+.main .wrapOpen p span {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
