@@ -4,6 +4,7 @@ $FONT: Verdana, Arial, Helvetica, "meirio", "メイリオ", "Hiragino Maru Gothi
   "ＭＳ Ｐゴシック", sans-serif;
 $FONT_COLOR: #555555;
 $GRADATION_COLOR: linear-gradient(rgb(255, 217, 94) 0%, orange 100%);
+$GRADATION_INVERT: linear-gradient(orange 0%, rgb(255, 217, 94) 100%);
 
 // @mixin 関数
 @mixin debug($color) {
@@ -22,7 +23,7 @@ h2 {
 h3 {
   margin: auto;
   color: $FONT_COLOR;
-  font-size: 1em;
+  font-size: 1.02em;
 }
 
 a {
@@ -92,7 +93,6 @@ body {
     display: flex;
     flex-direction: row;
     li {
-      background-image: $GRADATION_COLOR;
       width: calc(#{$MAX_WIDTH} / 5);
       border-right: solid 1px (orange);
       border-left: solid 1px (rgb(255, 209, 124));
@@ -108,8 +108,13 @@ body {
         width: 100%;
         height: 70px;
         font-weight: bold;
-        color: white;
         text-shadow: 1px 1px 2px #c6ae6c;
+        color: white;
+        background-image: $GRADATION_COLOR;
+        &:hover {
+          color: rgb(255, 217, 94);
+          background-image: $GRADATION_INVERT;
+        }
       }
       .jpn {
         font-size: 0.9em;
@@ -153,12 +158,18 @@ body {
           a {
             color: $FONT_COLOR;
           }
+          .normal:hover {
+            color: orange;
+          }
+          .beauty:hover {
+            color: #6CC6C4;
+          }
         }
       }
     }
   }
   // 中央右のメイン
-  .main {
+  .mainTop {
     width: 640px;
     min-width: 640px;
     .picMain {
@@ -271,7 +282,9 @@ footer {
 }
 
 // 医院紹介ページ専用
-.main {
+.mainClinic {
+  width: 640px;
+  min-width: 640px;
   background-color: white;
   border-radius: 6px;
   padding-bottom: 20px;
@@ -340,7 +353,9 @@ footer {
 }
 
 // 診療案内ページ専用
-.main {
+.mainService {
+  width: 640px;
+  min-width: 640px;
   background-color: white;
   border-radius: 6px;
   padding-bottom: 30px;
@@ -359,8 +374,8 @@ footer {
     h4 {
       color: orange;
       font-size: 0.96em;
-      margin: 0;
-      padding: 20px 0px 20px 20px;
+      margin-top: 20px;
+      padding: 0px 0px 20px 20px;
     }
     p {
       color: $FONT_COLOR;
@@ -375,21 +390,24 @@ footer {
 }
 
 // スタッフ紹介ページ専用
-.main {
+.mainStaff {
+  width: 640px;
+  min-width: 640px;
   background-color: white;
   border-radius: 6px;
   padding-bottom: 20px;
   .wrapMember {
     h2 {
       font-size: 1.25em;
-      border: solid 1px orage;
+      border: solid 1px orange;
       border-radius: 6px 6px 0px 0px;
       padding: 40px 0px 30px 20px;
     }
     .wrapDirector {
-      padding: 20px;
+      padding: 30px 0px 20px 20px;
       h3 {
         border-bottom: solid 3px orange;
+        padding-bottom: 15px;
       }
       .director {
         display: flex;
@@ -438,9 +456,10 @@ footer {
       padding: 10px 20px;
       h3 {
         border-bottom: solid 3px orange;
+        padding-bottom: 15px;
       }
       .wrapPic {
-        padding: 20px 0px;
+        padding: 15px 0px 20px 0px;
       }
       .nameStaff {
         p {
@@ -455,10 +474,11 @@ footer {
 }
 
 // アクセスページ専用
-.main {
+.mainAccess {
+  width: 640px;
+  min-width: 640px;
   background-color: white;
   border-radius: 6px;
-  padding-bottom: 20px;
   .wrapAccess {
     h2 {
       font-size: 1.25em;

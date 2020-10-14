@@ -10,7 +10,7 @@ h2 {
 h3 {
   margin: auto;
   color: #555555;
-  font-size: 1em;
+  font-size: 1.02em;
 }
 
 a {
@@ -110,8 +110,6 @@ body {
 }
 
 .top-nav ul li {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd95e), to(orange));
-  background-image: linear-gradient(#ffd95e 0%, orange 100%);
   width: calc(920px / 5);
   border-right: solid 1px orange;
   border-left: solid 1px #ffd17c;
@@ -131,8 +129,16 @@ body {
   width: 100%;
   height: 70px;
   font-weight: bold;
-  color: white;
   text-shadow: 1px 1px 2px #c6ae6c;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd95e), to(orange));
+  background-image: linear-gradient(#ffd95e 0%, orange 100%);
+}
+
+.top-nav ul li a:hover {
+  color: #ffd95e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(orange), to(#ffd95e));
+  background-image: linear-gradient(orange 0%, #ffd95e 100%);
 }
 
 .top-nav ul li .jpn {
@@ -190,31 +196,39 @@ body {
   color: #555555;
 }
 
-.center .main {
+.center .wrapSide .side .listSide li .normal:hover {
+  color: orange;
+}
+
+.center .wrapSide .side .listSide li .beauty:hover {
+  color: #6CC6C4;
+}
+
+.center .mainTop {
   width: 640px;
   min-width: 640px;
 }
 
-.center .main .picMain {
+.center .mainTop .picMain {
   padding-bottom: 5px;
 }
 
-.center .main .infoMain {
+.center .mainTop .infoMain {
   background-color: white;
   padding: 35px 20px;
   border-radius: 0 0 5px 5px;
 }
 
-.center .main .infoMain .titleInfo {
+.center .mainTop .infoMain .titleInfo {
   border-bottom: solid orange;
   padding-bottom: 10px;
 }
 
-.center .main .infoMain .listInfo {
+.center .mainTop .infoMain .listInfo {
   color: #555555;
 }
 
-.center .main .infoMain .listInfo .wrapDtd {
+.center .mainTop .infoMain .listInfo .wrapDtd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,13 +237,13 @@ body {
   padding-bottom: 10px;
 }
 
-.center .main .infoMain .listInfo .wrapDtd dt {
+.center .mainTop .infoMain .listInfo .wrapDtd dt {
   font-size: 13px;
   font-weight: bold;
   width: 25%;
 }
 
-.center .main .infoMain .listInfo .wrapDtd dd {
+.center .mainTop .infoMain .listInfo .wrapDtd dd {
   font-size: 13px;
   margin: 0px;
   width: 75%;
@@ -328,50 +342,52 @@ footer .copy {
   /*最後の>を消す*/
 }
 
-.main {
+.mainClinic {
+  width: 640px;
+  min-width: 640px;
   background-color: white;
   border-radius: 6px;
   padding-bottom: 20px;
 }
 
-.main .wrapConcept h2 {
+.mainClinic .wrapConcept h2 {
   font-size: 1.25em;
   border: solid 1px orage;
   border-radius: 6px 6px 0px 0px;
   padding: 40px 0px 30px 20px;
 }
 
-.main .wrapConcept h3 {
+.mainClinic .wrapConcept h3 {
   margin: 0px 20px;
   border-bottom: solid 3px orange;
   padding: 35px 0px 10px 0px;
 }
 
-.main .wrapConcept h4 {
+.mainClinic .wrapConcept h4 {
   color: orange;
   font-size: 0.96em;
   margin: 0;
   padding: 40px 0px 10px 30px;
 }
 
-.main .wrapConcept p {
+.mainClinic .wrapConcept p {
   color: #555555;
   font-size: 0.82em;
   padding: 0px 30px 0px 30px;
 }
 
-.main .wrapOpen {
+.mainClinic .wrapOpen {
   color: #555555;
   margin: 0px 20px;
 }
 
-.main .wrapOpen h3 {
+.mainClinic .wrapOpen h3 {
   margin: 0px 0px 17px 0px;
   border-bottom: solid 3px orange;
   padding: 35px 0px 10px 0px;
 }
 
-.main .wrapOpen table {
+.mainClinic .wrapOpen table {
   width: 100%;
   border-collapse: collapse;
   border-color: grey;
@@ -381,94 +397,99 @@ footer .copy {
   text-align: center;
 }
 
-.main .wrapOpen table tr th {
+.mainClinic .wrapOpen table tr th {
   margin: 0;
   padding: 10px;
   background-color: #cccccc;
   border: solid 1px gray;
 }
 
-.main .wrapOpen table tr td {
+.mainClinic .wrapOpen table tr td {
   margin: 0;
   padding: 10px;
   border: solid 1px gray;
 }
 
-.main .wrapOpen p {
+.mainClinic .wrapOpen p {
   font-size: 0.82em;
   padding: 0px 30px 0px 0px;
 }
 
-.main .wrapOpen p span {
+.mainClinic .wrapOpen p span {
   font-weight: bold;
 }
 
-.main {
+.mainService {
+  width: 640px;
+  min-width: 640px;
   background-color: white;
   border-radius: 6px;
   padding-bottom: 30px;
 }
 
-.main .wrapMedical h2 {
+.mainService .wrapMedical h2 {
   font-size: 1.25em;
   border: solid 1px orage;
   border-radius: 6px 6px 0px 0px;
   padding: 40px 0px 30px 20px;
 }
 
-.main .wrapMedical h3 {
+.mainService .wrapMedical h3 {
   margin: 0px 20px;
   border-bottom: solid 3px orange;
   padding: 35px 0px 10px 0px;
 }
 
-.main .wrapMedical h4 {
+.mainService .wrapMedical h4 {
   color: orange;
   font-size: 0.96em;
-  margin: 0;
-  padding: 20px 0px 20px 20px;
+  margin-top: 20px;
+  padding: 0px 0px 20px 20px;
 }
 
-.main .wrapMedical p {
+.mainService .wrapMedical p {
   color: #555555;
   font-size: 0.82em;
   margin: 0;
   padding: 0px 0px 3px 20px;
 }
 
-.main .wrapMedical .blank {
+.mainService .wrapMedical .blank {
   height: 20px;
 }
 
-.main {
+.mainStaff {
+  width: 640px;
+  min-width: 640px;
   background-color: white;
   border-radius: 6px;
   padding-bottom: 20px;
 }
 
-.main .wrapMember h2 {
+.mainStaff .wrapMember h2 {
   font-size: 1.25em;
-  border: solid 1px orage;
+  border: solid 1px orange;
   border-radius: 6px 6px 0px 0px;
   padding: 40px 0px 30px 20px;
 }
 
-.main .wrapMember .wrapDirector {
-  padding: 20px;
+.mainStaff .wrapMember .wrapDirector {
+  padding: 30px 0px 20px 20px;
 }
 
-.main .wrapMember .wrapDirector h3 {
+.mainStaff .wrapMember .wrapDirector h3 {
   border-bottom: solid 3px orange;
+  padding-bottom: 15px;
 }
 
-.main .wrapMember .wrapDirector .director {
+.mainStaff .wrapMember .wrapDirector .director {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 15px 0px;
 }
 
-.main .wrapMember .wrapDirector .director .wrapPic p {
+.mainStaff .wrapMember .wrapDirector .director .wrapPic p {
   font-size: 0.82em;
   color: white;
   background-color: orange;
@@ -476,28 +497,28 @@ footer .copy {
   padding: 1px;
 }
 
-.main .wrapMember .wrapDirector .director .wrapCarrier h4 {
+.mainStaff .wrapMember .wrapDirector .director .wrapCarrier h4 {
   color: orange;
   font-size: 0.96em;
   margin: 0;
   padding: 17px 0px 17px 20px;
 }
 
-.main .wrapMember .wrapDirector .director .wrapCarrier p {
+.mainStaff .wrapMember .wrapDirector .director .wrapCarrier p {
   color: #555555;
   font-size: 0.82em;
   margin: 0;
   padding: 0px 0px 3px 20px;
 }
 
-.main .wrapMember .wrapDirector .greeting h4 {
+.mainStaff .wrapMember .wrapDirector .greeting h4 {
   color: orange;
   font-size: 0.96em;
   margin: 0;
   padding: 17px 0px 7px 0px;
 }
 
-.main .wrapMember .wrapDirector .greeting p {
+.mainStaff .wrapMember .wrapDirector .greeting p {
   color: #555555;
   font-size: 0.82em;
   margin: 0;
@@ -505,80 +526,82 @@ footer .copy {
   line-height: 1.7em;
 }
 
-.main .wrapMember .wrapStaff {
+.mainStaff .wrapMember .wrapStaff {
   padding: 10px 20px;
 }
 
-.main .wrapMember .wrapStaff h3 {
+.mainStaff .wrapMember .wrapStaff h3 {
   border-bottom: solid 3px orange;
+  padding-bottom: 15px;
 }
 
-.main .wrapMember .wrapStaff .wrapPic {
-  padding: 20px 0px;
+.mainStaff .wrapMember .wrapStaff .wrapPic {
+  padding: 15px 0px 20px 0px;
 }
 
-.main .wrapMember .wrapStaff .nameStaff p {
+.mainStaff .wrapMember .wrapStaff .nameStaff p {
   color: #555555;
   font-size: 0.82em;
   margin: 0;
   padding: 0.1em 0;
 }
 
-.main {
+.mainAccess {
+  width: 640px;
+  min-width: 640px;
   background-color: white;
   border-radius: 6px;
-  padding-bottom: 20px;
 }
 
-.main .wrapAccess h2 {
+.mainAccess .wrapAccess h2 {
   font-size: 1.25em;
   border: solid 1px orage;
   border-radius: 6px 6px 0px 0px;
   padding: 40px 0px 30px 20px;
 }
 
-.main .wrapAccess .wrapMap {
+.mainAccess .wrapAccess .wrapMap {
   padding: 20px;
 }
 
-.main .wrapAccess .wrapMap h3 {
+.mainAccess .wrapAccess .wrapMap h3 {
   padding: 15px 0px;
   border-bottom: solid 3px orange;
 }
 
-.main .wrapAccess .wrapMap .map {
+.mainAccess .wrapAccess .wrapMap .map {
   padding: 15px 0px 0px 0px;
 }
 
-.main .wrapAccess .wrapMap .link a {
+.mainAccess .wrapAccess .wrapMap .link a {
   color: blue;
   font-size: 0.7em;
   text-decoration: underline;
 }
 
-.main .wrapAccess .wrapMap .line {
+.mainAccess .wrapAccess .wrapMap .line {
   margin: 10px 0px;
   border-bottom: solid 4px orange;
 }
 
-.main .wrapAccess .wrapMap .wrapUnder {
+.mainAccess .wrapAccess .wrapMap .wrapUnder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main .wrapAccess .wrapMap .wrapUnder .wrapInfo {
+.mainAccess .wrapAccess .wrapMap .wrapUnder .wrapInfo {
   padding-left: 20px;
 }
 
-.main .wrapAccess .wrapMap .wrapUnder .wrapInfo h4 {
+.mainAccess .wrapAccess .wrapMap .wrapUnder .wrapInfo h4 {
   color: orange;
   font-size: 0.96em;
   margin: 0;
   padding: 17px 0px 7px 0px;
 }
 
-.main .wrapAccess .wrapMap .wrapUnder .wrapInfo p {
+.mainAccess .wrapAccess .wrapMap .wrapUnder .wrapInfo p {
   color: #555555;
   font-size: 0.82em;
   margin: 0;
